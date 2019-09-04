@@ -22,7 +22,7 @@ if(!localStorage.getItem('芝寧')) {
   setUserName();
 } else {
   var storedName = localStorage.getItem('芝寧');
-  myHeading.innerHTML = '軒丞超愛, ' + storedName;
+  myHeading.innerHTML = '軒丞超愛' + storedName;
 }
 
 myButton.onclick = function() {
