@@ -15,7 +15,7 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
   var myName = prompt('芝寧.');
   localStorage.setItem('芝寧', myName);
-  myHeading.innerHTML = '軒丞超愛, ' + myName;
+  myHeading.innerHTML = '軒丞超愛' + myName;
 }
 
 if(!localStorage.getItem('芝寧')) {
