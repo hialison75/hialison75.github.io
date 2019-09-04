@@ -13,15 +13,15 @@ var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
 function setUserName() {
-  var myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  myHeading.innerHTML = '軒丞超愛我, ' + myName;
+  var myName = prompt('芝寧.');
+  localStorage.setItem('芝寧', myName);
+  myHeading.innerHTML = '軒丞超愛, ' + myName;
 }
 
-if(!localStorage.getItem('name')) {
+if(!localStorage.getItem('芝寧')) {
   setUserName();
 } else {
-  var storedName = localStorage.getItem('name');
+  var storedName = localStorage.getItem('芝寧');
   myHeading.innerHTML = '軒丞超愛我, ' + storedName;
 }
 
